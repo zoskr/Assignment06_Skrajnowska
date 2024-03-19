@@ -11,10 +11,10 @@ class Circle(Shape):
         self.radius = r
     def area(self):
         self.area = math.pi * (self.radius**2)
-        print(self.area)
+        print("A = ",self.area)
     def perim(self):
         self.perim = 2 * math.pi * self.radius
-        print(self.perim)
+        print("P = ",self.perim)
 
 class Rectangle(Shape):
     def __init__(self, w, h):
@@ -22,10 +22,10 @@ class Rectangle(Shape):
         self.height = h
     def area(self):
         self.area = self.width * self.height
-        print(self.area)
+        print("A = ",self.area)
     def perim(self):
         self.perim = 2*(self.width+self.height)
-        print(self.perim)
+        print("P = ",self.perim)
 
 class Triangle(Shape):
     def __init__(self, a, b, c):
@@ -35,10 +35,10 @@ class Triangle(Shape):
     def area(self):
         s = (self.a + self.b + self.c) / 2
         self.area = math.sqrt(s*(s-self.a)*(s-self.b)*(s-self.c))
-        print(self.area)
+        print("A = ",self.area)
     def perim(self):
         self.perim = self.a + self.b + self.c
-        print(self.perim)
+        print("P = ",self.perim)
 
 def main():
     shapes = [Circle(2),Rectangle(3, 4),Triangle(5, 6, 7)]
